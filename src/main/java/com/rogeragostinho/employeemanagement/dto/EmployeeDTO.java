@@ -1,4 +1,11 @@
 package com.rogeragostinho.employeemanagement.dto;
 
-public record EmployeeDTO() {
-}
+import com.rogeragostinho.employeemanagement.enums.EmployeeStatus;
+
+public record EmployeeDTO(
+        long id,
+        String name,
+        String position,
+        EmployeeStatus status,
+        long departmentId
+) {}

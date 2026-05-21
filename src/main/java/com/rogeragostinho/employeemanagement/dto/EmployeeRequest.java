@@ -1,4 +1,7 @@
 package com.rogeragostinho.employeemanagement.dto;
 
-public class EmployeeRequest {
-}
+public record EmployeeRequest(
+        long id,
+        String name,
+        String position
+) { }
